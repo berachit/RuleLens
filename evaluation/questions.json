@@ -1,0 +1,465 @@
+[
+  {
+    "id": "a01",
+    "category": "answerable",
+    "question": "What is the deadline for submitting a late-registration request after the ordinary registration window closes?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "4. Course Registration and Add/Drop"
+      }
+    ]
+  },
+  {
+    "id": "a02",
+    "category": "answerable",
+    "question": "Within how many calendar days must a student submit medical documentation after returning to classes?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "5. Attendance and Participation"
+      }
+    ]
+  },
+  {
+    "id": "a03",
+    "category": "answerable",
+    "question": "Within how many working days must a student submit an absence explanation after missing an examination?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "6. Examinations and Assessment"
+      }
+    ]
+  },
+  {
+    "id": "a04",
+    "category": "answerable",
+    "question": "Within how many calendar days may a student request a review of a recorded grade?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "7. Grading, Grade Review, and Reassessment"
+      }
+    ]
+  },
+  {
+    "id": "a05",
+    "category": "answerable",
+    "question": "What letter grades are used by the University grading system?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "7. Grading, Grade Review, and Reassessment"
+      }
+    ]
+  },
+  {
+    "id": "a06",
+    "category": "answerable",
+    "question": "What standard deadline is listed for payment of the hostel fee?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Section 1 Table"
+      }
+    ]
+  },
+  {
+    "id": "a07",
+    "category": "answerable",
+    "question": "What is the consequence of missing the hostel fee payment deadline?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Section 1 Table"
+      }
+    ]
+  },
+  {
+    "id": "a08",
+    "category": "answerable",
+    "question": "What standard deadline is established for the library renewal fee?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Section 1 Table"
+      }
+    ]
+  },
+  {
+    "id": "a09",
+    "category": "answerable",
+    "question": "What is the stated consequence if the library renewal fee deadline is missed?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Section 1 Table"
+      }
+    ]
+  },
+  {
+    "id": "a10",
+    "category": "answerable",
+    "question": "What is the standard deadline for payment of the examination fee?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Section 1 Table"
+      }
+    ]
+  },
+  {
+    "id": "a11",
+    "category": "answerable",
+    "question": "What administrative consequence may occur if the examination fee deadline is missed?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Section 1 Table"
+      }
+    ]
+  },
+  {
+    "id": "a12",
+    "category": "answerable",
+    "question": "Within how many calendar days must a student submit a written fee dispute to the Finance Office?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Payment and dispute procedure"
+      }
+    ]
+  },
+  {
+    "id": "a13",
+    "category": "answerable",
+    "question": "Unless a specific deadline is stated, within how many calendar days should an appeal be submitted?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "16. Appeals and Administrative Review"
+      }
+    ]
+  },
+  {
+    "id": "a14",
+    "category": "answerable",
+    "question": "What regular semesters are included in the Demo University academic year?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "2. Academic Calendar and Semesters"
+      }
+    ]
+  },
+  {
+    "id": "a15",
+    "category": "answerable",
+    "question": "In which month does Semester I normally begin?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "2. Academic Calendar and Semesters"
+      }
+    ]
+  },
+  {
+    "id": "a16",
+    "category": "answerable",
+    "question": "In which month does Semester II normally begin?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "2. Academic Calendar and Semesters"
+      }
+    ]
+  },
+  {
+    "id": "a17",
+    "category": "answerable",
+    "question": "What office is the University's principal academic policy-making body?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "1. Purpose, Scope, and Authority"
+      }
+    ]
+  },
+  {
+    "id": "a18",
+    "category": "answerable",
+    "question": "Which office is primarily responsible for maintaining students' academic records?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "3. Admission, Enrollment, and Student Status"
+      }
+    ]
+  },
+  {
+    "id": "a19",
+    "category": "answerable",
+    "question": "What creates an academic backlog under University regulations?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "8. Academic Progression and Backlogs"
+      }
+    ]
+  },
+  {
+    "id": "a20",
+    "category": "answerable",
+    "question": "What notice ID is assigned to the Fee and Deadline Notice 2026?",
+    "expected_status": "ANSWERED",
+    "expected_sources": [
+      {
+        "document": "fee_deadlines.md",
+        "section": "Header"
+      }
+    ]
+  },
+  {
+    "id": "u01",
+    "category": "unanswerable",
+    "question": "Can a student miss an examination to attend a family wedding?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u02",
+    "category": "unanswerable",
+    "question": "What is the maximum number of books an undergraduate student can borrow from the library?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u03",
+    "category": "unanswerable",
+    "question": "What is the exact curfew time for university residence halls?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u04",
+    "category": "unanswerable",
+    "question": "What is the minimum CGPA required for campus placement registration?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u05",
+    "category": "unanswerable",
+    "question": "What is the exact monetary late registration penalty fee in dollars?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u06",
+    "category": "unanswerable",
+    "question": "What is the hourly student worker wage on campus?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u07",
+    "category": "unanswerable",
+    "question": "Are dogs and pets allowed inside university residential dormitories?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u08",
+    "category": "unanswerable",
+    "question": "Can students pay university tuition fees using cryptocurrency or Bitcoin?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u09",
+    "category": "unanswerable",
+    "question": "What is the universal numerical conversion table between raw marks and letter grades?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u10",
+    "category": "unanswerable",
+    "question": "Does the university provide a travel grant for undergraduate conference presentations?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u11",
+    "category": "unanswerable",
+    "question": "Can a student park a motorcycle inside the university dormitory basement?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u12",
+    "category": "unanswerable",
+    "question": "Does the university provide free Adobe Creative Cloud subscriptions for students?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u13",
+    "category": "unanswerable",
+    "question": "What graphing calculator model is mandatory for calculus exams?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u14",
+    "category": "unanswerable",
+    "question": "Are kosher and halal meal options available in all residence halls?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u15",
+    "category": "unanswerable",
+    "question": "What are the rules for joining the university esports competitive gaming team?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u16",
+    "category": "unanswerable",
+    "question": "What is the minimum age requirement to enroll in undergraduate courses?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u17",
+    "category": "unanswerable",
+    "question": "Can student campaign posters be displayed on academic building walls during elections?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u18",
+    "category": "unanswerable",
+    "question": "What is the free semester printing quota allowance for students?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u19",
+    "category": "unanswerable",
+    "question": "How much does it cost to rent a gym locker at the campus recreation center?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u20",
+    "category": "unanswerable",
+    "question": "Can students waive the mandatory health surcharge without paying?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u21",
+    "category": "unanswerable",
+    "question": "Does the student health insurance plan cover dental and orthodontic work?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u22",
+    "category": "unanswerable",
+    "question": "What is the maximum degree completion duration in years for an undergraduate program?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u23",
+    "category": "unanswerable",
+    "question": "Can undergraduate students apply for a study abroad semester in Tokyo Japan?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u24",
+    "category": "unanswerable",
+    "question": "How many free clinical therapy sessions are granted by the university psychological center?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "u25",
+    "category": "unanswerable",
+    "question": "Can I receive university course credit for middle school coursework completed before ninth grade?",
+    "expected_status": "NOT_COVERED",
+    "expected_sources": []
+  },
+  {
+    "id": "c01",
+    "category": "contradiction",
+    "question": "What is the minimum attendance requirement to appear for regular final examinations?",
+    "expected_status": "CONFLICT",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "5.1 Attendance and Participation"
+      },
+      {
+        "document": "attendance_circular.md",
+        "section": "1. Regular Examination Eligibility"
+      }
+    ]
+  },
+  {
+    "id": "c02",
+    "category": "contradiction",
+    "question": "What is the minimum cumulative GPA required for the Demo University Merit Scholarship?",
+    "expected_status": "CONFLICT",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "9.2 Scholarships and Financial Assistance"
+      },
+      {
+        "document": "scholarship_notice.md",
+        "section": "2. Eligibility"
+      }
+    ]
+  },
+  {
+    "id": "c03",
+    "category": "contradiction",
+    "question": "What is the deadline for paying semester tuition?",
+    "expected_status": "CONFLICT",
+    "expected_sources": [
+      {
+        "document": "academic_regulations.md",
+        "section": "10. Fees, Payment, Refunds, and Financial Holds"
+      },
+      {
+        "document": "fee_deadlines.md",
+        "section": "Semester tuition"
+      }
+    ]
+  }
+]

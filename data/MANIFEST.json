@@ -1,0 +1,18 @@
+{
+  "corpus": "Demo University \u2014 Academic & Student Regulations 2026",
+  "fictional": true,
+  "word_count": 6594,
+  "mixed_formats": [
+    "markdown",
+    "markdown_table",
+    "pdf"
+  ],
+  "intentional_contradictions": 3,
+  "sources": [
+    "corpus/academic_regulations.md",
+    "corpus/fee_deadlines.md",
+    "corpus/scholarship_notice.md",
+    "corpus/attendance_circular.md",
+    "corpus/academic_regulations_excerpt.pdf"
+  ]
+}

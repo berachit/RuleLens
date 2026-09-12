@@ -1,0 +1,1443 @@
+{
+  "timestamp": "2026-09-12T11:44:22Z",
+  "total_questions": 48,
+  "duration_seconds": 7.91,
+  "overall_status_accuracy_pct": 72.92,
+  "answerable_accuracy_pct": 65.0,
+  "refusal_accuracy_pct": 76.0,
+  "contradiction_accuracy_pct": 100.0,
+  "citation_provenance_accuracy_pct": 87.5,
+  "breakdown": {
+    "answerable": {
+      "total": 20,
+      "passed": 13
+    },
+    "unanswerable": {
+      "total": 25,
+      "passed": 19
+    },
+    "contradiction": {
+      "total": 3,
+      "passed": 3
+    }
+  },
+  "results": [
+    {
+      "id": "a01",
+      "category": "answerable",
+      "question": "What is the deadline for submitting a late-registration request after the ordinary registration window closes?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 5,
+          "section": "4. Course Registration and Add/Drop",
+          "chunk_id": "chk-ca481f226ce2",
+          "text_snippet": "## 4. Course Registration and Add/Drop Students must complete course registration within the registration window published by the Academic Office. Registration is confirmed only after required academic and financial checks are complete. A student should review the final registered-course list and report discrepancies promptly. A student who misses ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-d5cbfa197384",
+          "text_snippet": "registering for the later course. A prerequisite may be identified in the program curriculum or course catalog. These regulations do not establish a universal list of prerequisites. Changes to the academic calendar may be announced by the Academic Office when circumstances require adjustment. A revised notice should identify the affected dates and ..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 1,
+          "section": "Demo University \u2014 Fee and Deadline Notice 2026",
+          "chunk_id": "chk-b0cc7801a915",
+          "text_snippet": "# Demo University \u2014 Fee and Deadline Notice 2026\n\n**Notice ID:** FIN-2026-08  \n**Published:** 1 August 2026  \n**Status:** Fictional RuleLens test source\n\n| Fee item | Standard deadline | Consequence after deadline |\n|---|---|---|\n| Semester tuition | 20 August 2026 | Late fee may apply |\n| Examination fee | 20 September 2026 | Examination registrat..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 17,
+          "section": "16. Appeals and Administrative Review",
+          "chunk_id": "chk-effe99efb197",
+          "text_snippet": "corpus does not establish whether late appeals can ever be accepted for exceptional reasons. An appeal should not be used to invent a rule that is absent from the regulations. If the underlying issue concerns a matter not addressed by this corpus, the student should seek clarification from the responsible authority. Where two published provisions a..."
+        }
+      ],
+      "answer_preview": "The regulations state that a student who misses the ordinary registration window may submit a late\u2011registration request **within five calendar days after the re..."
+    },
+    {
+      "id": "a02",
+      "category": "answerable",
+      "question": "Within how many calendar days must a student submit medical documentation after returning to classes?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 14,
+          "section": "13. Student Leave and Medical Documentation",
+          "chunk_id": "chk-bc0316e62ef8",
+          "text_snippet": "## 13. Student Leave and Medical Documentation Students who need to be absent from classes for personal reasons should inform the relevant academic office or instructor according to departmental procedure. Informing an instructor does not automatically create an approved leave record. Extended leave requires formal approval. The approval may specif..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 6,
+          "section": "5. Attendance and Participation",
+          "chunk_id": "chk-6dd3ef3f9cbe",
+          "text_snippet": "## 5. Attendance and Participation Students are expected to attend scheduled teaching activities. A student must maintain at least 75% attendance in a course to be eligible for the regular end-semester examination under the general attendance rule in this corpus. Attendance is normally calculated from scheduled teaching activities recorded by the i..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 6,
+          "section": "5. Attendance and Participation",
+          "chunk_id": "chk-ae82b6b5ba9f",
+          "text_snippet": "every shortage will be condoned. For laboratory courses, attendance is calculated using scheduled laboratory sessions. Missing a laboratory session may also require completion of a make-up activity where the instructor permits one. A make-up activity does not necessarily erase the original absence from the attendance record. Students should notify ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-d5cbfa197384",
+          "text_snippet": "registering for the later course. A prerequisite may be identified in the program curriculum or course catalog. These regulations do not establish a universal list of prerequisites. Changes to the academic calendar may be announced by the Academic Office when circumstances require adjustment. A revised notice should identify the affected dates and ..."
+        }
+      ],
+      "answer_preview": "A student must submit medical documentation **within seven calendar days of returning to classes**.  \nThis requirement is stated in the regulations:\n\n- *academi..."
+    },
+    {
+      "id": "a03",
+      "category": "answerable",
+      "question": "Within how many working days must a student submit an absence explanation after missing an examination?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations_excerpt.pdf",
+          "page": 2,
+          "section": "General Section",
+          "chunk_id": "chk-c68d0f8f0269",
+          "text_snippet": "Page 2 \u2014 Examination absence\nSection 6.2 \u2014 Examination absence. A student who misses an examination must submit an absence\nexplanation to the Academic Office within three working days. Approval of a special examination is not\nautomatic."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 7,
+          "section": "6. Examinations and Assessment",
+          "chunk_id": "chk-bbc82fa3c93c",
+          "text_snippet": "## 6. Examinations and Assessment A student who satisfies course attendance requirements and has completed required academic work may appear in the regular end-semester examination. Course-specific assessment requirements may include assignments, laboratories, projects, presentations, or other components. A student who misses an examination must su..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 6,
+          "section": "5. Attendance and Participation",
+          "chunk_id": "chk-ae82b6b5ba9f",
+          "text_snippet": "every shortage will be condoned. For laboratory courses, attendance is calculated using scheduled laboratory sessions. Missing a laboratory session may also require completion of a make-up activity where the instructor permits one. A make-up activity does not necessarily erase the original absence from the attendance record. Students should notify ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 14,
+          "section": "13. Student Leave and Medical Documentation",
+          "chunk_id": "chk-bc0316e62ef8",
+          "text_snippet": "## 13. Student Leave and Medical Documentation Students who need to be absent from classes for personal reasons should inform the relevant academic office or instructor according to departmental procedure. Informing an instructor does not automatically create an approved leave record. Extended leave requires formal approval. The approval may specif..."
+        }
+      ],
+      "answer_preview": "A student who misses an examination must submit an absence explanation to the Academic Office **within three working days**.  \n\n- *academic_regulations_excerpt...."
+    },
+    {
+      "id": "a04",
+      "category": "answerable",
+      "question": "Within how many calendar days may a student request a review of a recorded grade?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 8,
+          "section": "7. Grading, Grade Review, and Reassessment",
+          "chunk_id": "chk-66665a2a6b8a",
+          "text_snippet": "## 7. Grading, Grade Review, and Reassessment The University uses letter grades from A through F. A grade of F is a failing grade. The detailed conversion between numerical marks and letter grades is not specified in this corpus and should not be invented by the system. A student may request a review of a recorded grade within ten calendar days of ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 8,
+          "section": "7. Grading, Grade Review, and Reassessment",
+          "chunk_id": "chk-01d24a649761",
+          "text_snippet": "recorded according to the rules published for that examination cycle. This corpus does not specify a universal maximum number of improvement attempts. Students should distinguish between grade review, reassessment, and grade improvement. A grade review examines a recorded result; reassessment provides an additional assessment opportunity where offe..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 6,
+          "section": "5. Attendance and Participation",
+          "chunk_id": "chk-6dd3ef3f9cbe",
+          "text_snippet": "## 5. Attendance and Participation Students are expected to attend scheduled teaching activities. A student must maintain at least 75% attendance in a course to be eligible for the regular end-semester examination under the general attendance rule in this corpus. Attendance is normally calculated from scheduled teaching activities recorded by the i..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 6,
+          "section": "5. Attendance and Participation",
+          "chunk_id": "chk-ae82b6b5ba9f",
+          "text_snippet": "every shortage will be condoned. For laboratory courses, attendance is calculated using scheduled laboratory sessions. Missing a laboratory session may also require completion of a make-up activity where the instructor permits one. A make-up activity does not necessarily erase the original absence from the attendance record. Students should notify ..."
+        }
+      ],
+      "answer_preview": "A student may request a review of a recorded grade **within ten calendar days** of the official publication of that grade.  \n*Source: academic_regulations.md, P..."
+    },
+    {
+      "id": "a05",
+      "category": "answerable",
+      "question": "What letter grades are used by the University grading system?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 8,
+          "section": "7. Grading, Grade Review, and Reassessment",
+          "chunk_id": "chk-66665a2a6b8a",
+          "text_snippet": "## 7. Grading, Grade Review, and Reassessment The University uses letter grades from A through F. A grade of F is a failing grade. The detailed conversion between numerical marks and letter grades is not specified in this corpus and should not be invented by the system. A student may request a review of a recorded grade within ten calendar days of ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 21,
+          "section": "20. Final Operational Principles",
+          "chunk_id": "chk-142dc13d69c4",
+          "text_snippet": "retrieval system should preserve headings and nearby text. If it retrieves \"20 September 2026\" without the row label \"Examination fee,\" the evidence is incomplete. If it retrieves \"8.00/10.00\" without the phrase \"Demo University Merit Scholarship,\" the evidence may be insufficient for a question about that particular scholarship. For source viewing..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 8,
+          "section": "7. Grading, Grade Review, and Reassessment",
+          "chunk_id": "chk-01d24a649761",
+          "text_snippet": "recorded according to the rules published for that examination cycle. This corpus does not specify a universal maximum number of improvement attempts. Students should distinguish between grade review, reassessment, and grade improvement. A grade review examines a recorded result; reassessment provides an additional assessment opportunity where offe..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 2,
+          "section": "1. Purpose, Scope, and Authority",
+          "chunk_id": "chk-f0f42caf5980",
+          "text_snippet": "## 1. Purpose, Scope, and Authority These Academic and Student Regulations establish the baseline rules for undergraduate academic administration, student responsibilities, assessment, progression, fees, scholarships, residential life, facilities, conduct, appeals, and graduation at Demo University. The regulations are written as a self-contained f..."
+        }
+      ],
+      "answer_preview": "The University\u2019s grading system uses the letter grades **A, B, C, D, E, and F**.  \nThis is stated in the regulations: *\u201cThe University uses letter grades from A..."
+    },
+    {
+      "id": "a06",
+      "category": "answerable",
+      "question": "What standard deadline is listed for payment of the hostel fee?",
+      "expected_status": "ANSWERED",
+      "actual_status": "CONFLICT",
+      "status_correct": false,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-3eea239d6eaa",
+          "text_snippet": "## 11. Hostel and Residential Life Hostel allocation is subject to availability, program requirements, and the University's residential rules. An allocation is not guaranteed merely because a student submits an application. Students receiving a room allocation must complete the required residential check-in process. Check-in may require identity ve..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 1,
+          "section": "Demo University \u2014 Fee and Deadline Notice 2026",
+          "chunk_id": "chk-b0cc7801a915",
+          "text_snippet": "# Demo University \u2014 Fee and Deadline Notice 2026\n\n**Notice ID:** FIN-2026-08  \n**Published:** 1 August 2026  \n**Status:** Fictional RuleLens test source\n\n| Fee item | Standard deadline | Consequence after deadline |\n|---|---|---|\n| Semester tuition | 20 August 2026 | Late fee may apply |\n| Examination fee | 20 September 2026 | Examination registrat..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    },
+    {
+      "id": "a07",
+      "category": "answerable",
+      "question": "What is the consequence of missing the hostel fee payment deadline?",
+      "expected_status": "ANSWERED",
+      "actual_status": "CONFLICT",
+      "status_correct": false,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-3eea239d6eaa",
+          "text_snippet": "## 11. Hostel and Residential Life Hostel allocation is subject to availability, program requirements, and the University's residential rules. An allocation is not guaranteed merely because a student submits an application. Students receiving a room allocation must complete the required residential check-in process. Check-in may require identity ve..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 2,
+          "section": "Payment and dispute procedure",
+          "chunk_id": "chk-7986dbf32819",
+          "text_snippet": "## Payment and dispute procedure\n\nStudents should retain payment receipts. A student who believes a fee has been charged incorrectly may submit a written dispute to the Finance Office within ten calendar days of the charge appearing in the student account.\n\nThe semester tuition deadline above intentionally differs from Section 10 of the main regula..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-ce8b9331bf8a",
+          "text_snippet": "result in an administrative or registration hold. A hold may prevent course additions or other processes until the underlying issue is resolved. The specific consequences of a particular hold may depend on the responsible office. Refunds, where available, are governed by the applicable fee or withdrawal notice. These regulations do not establish a ..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    },
+    {
+      "id": "a08",
+      "category": "answerable",
+      "question": "What standard deadline is established for the library renewal fee?",
+      "expected_status": "ANSWERED",
+      "actual_status": "CONFLICT",
+      "status_correct": false,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "fee_deadlines.md",
+          "page": 1,
+          "section": "Demo University \u2014 Fee and Deadline Notice 2026",
+          "chunk_id": "chk-b0cc7801a915",
+          "text_snippet": "# Demo University \u2014 Fee and Deadline Notice 2026\n\n**Notice ID:** FIN-2026-08  \n**Published:** 1 August 2026  \n**Status:** Fictional RuleLens test source\n\n| Fee item | Standard deadline | Consequence after deadline |\n|---|---|---|\n| Semester tuition | 20 August 2026 | Late fee may apply |\n| Examination fee | 20 September 2026 | Examination registrat..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 13,
+          "section": "12. Library and Campus Facilities",
+          "chunk_id": "chk-73becd6560ba",
+          "text_snippet": "## 12. Library and Campus Facilities Students may borrow library materials subject to the borrowing limits applicable to their student category. Overdue materials may result in fines or temporary borrowing restrictions. The library renewal fee appears in the fee schedule with a standard deadline of 30 August 2026. The stated consequence is that lib..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    },
+    {
+      "id": "a09",
+      "category": "answerable",
+      "question": "What is the stated consequence if the library renewal fee deadline is missed?",
+      "expected_status": "ANSWERED",
+      "actual_status": "CONFLICT",
+      "status_correct": false,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 13,
+          "section": "12. Library and Campus Facilities",
+          "chunk_id": "chk-73becd6560ba",
+          "text_snippet": "## 12. Library and Campus Facilities Students may borrow library materials subject to the borrowing limits applicable to their student category. Overdue materials may result in fines or temporary borrowing restrictions. The library renewal fee appears in the fee schedule with a standard deadline of 30 August 2026. The stated consequence is that lib..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-ce8b9331bf8a",
+          "text_snippet": "result in an administrative or registration hold. A hold may prevent course additions or other processes until the underlying issue is resolved. The specific consequences of a particular hold may depend on the responsible office. Refunds, where available, are governed by the applicable fee or withdrawal notice. These regulations do not establish a ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 1,
+          "section": "Demo University \u2014 Fee and Deadline Notice 2026",
+          "chunk_id": "chk-b0cc7801a915",
+          "text_snippet": "# Demo University \u2014 Fee and Deadline Notice 2026\n\n**Notice ID:** FIN-2026-08  \n**Published:** 1 August 2026  \n**Status:** Fictional RuleLens test source\n\n| Fee item | Standard deadline | Consequence after deadline |\n|---|---|---|\n| Semester tuition | 20 August 2026 | Late fee may apply |\n| Examination fee | 20 September 2026 | Examination registrat..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    },
+    {
+      "id": "a10",
+      "category": "answerable",
+      "question": "What is the standard deadline for payment of the examination fee?",
+      "expected_status": "ANSWERED",
+      "actual_status": "CONFLICT",
+      "status_correct": false,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 2,
+          "section": "Payment and dispute procedure",
+          "chunk_id": "chk-7986dbf32819",
+          "text_snippet": "## Payment and dispute procedure\n\nStudents should retain payment receipts. A student who believes a fee has been charged incorrectly may submit a written dispute to the Finance Office within ten calendar days of the charge appearing in the student account.\n\nThe semester tuition deadline above intentionally differs from Section 10 of the main regula..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 1,
+          "section": "Demo University \u2014 Fee and Deadline Notice 2026",
+          "chunk_id": "chk-b0cc7801a915",
+          "text_snippet": "# Demo University \u2014 Fee and Deadline Notice 2026\n\n**Notice ID:** FIN-2026-08  \n**Published:** 1 August 2026  \n**Status:** Fictional RuleLens test source\n\n| Fee item | Standard deadline | Consequence after deadline |\n|---|---|---|\n| Semester tuition | 20 August 2026 | Late fee may apply |\n| Examination fee | 20 September 2026 | Examination registrat..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    },
+    {
+      "id": "a11",
+      "category": "answerable",
+      "question": "What administrative consequence may occur if the examination fee deadline is missed?",
+      "expected_status": "ANSWERED",
+      "actual_status": "CONFLICT",
+      "status_correct": false,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-ce8b9331bf8a",
+          "text_snippet": "result in an administrative or registration hold. A hold may prevent course additions or other processes until the underlying issue is resolved. The specific consequences of a particular hold may depend on the responsible office. Refunds, where available, are governed by the applicable fee or withdrawal notice. These regulations do not establish a ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 2,
+          "section": "Payment and dispute procedure",
+          "chunk_id": "chk-7986dbf32819",
+          "text_snippet": "## Payment and dispute procedure\n\nStudents should retain payment receipts. A student who believes a fee has been charged incorrectly may submit a written dispute to the Finance Office within ten calendar days of the charge appearing in the student account.\n\nThe semester tuition deadline above intentionally differs from Section 10 of the main regula..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    },
+    {
+      "id": "a12",
+      "category": "answerable",
+      "question": "Within how many calendar days must a student submit a written fee dispute to the Finance Office?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "fee_deadlines.md",
+          "page": 2,
+          "section": "Payment and dispute procedure",
+          "chunk_id": "chk-7986dbf32819",
+          "text_snippet": "## Payment and dispute procedure\n\nStudents should retain payment receipts. A student who believes a fee has been charged incorrectly may submit a written dispute to the Finance Office within ten calendar days of the charge appearing in the student account.\n\nThe semester tuition deadline above intentionally differs from Section 10 of the main regula..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-ce8b9331bf8a",
+          "text_snippet": "result in an administrative or registration hold. A hold may prevent course additions or other processes until the underlying issue is resolved. The specific consequences of a particular hold may depend on the responsible office. Refunds, where available, are governed by the applicable fee or withdrawal notice. These regulations do not establish a ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 5,
+          "section": "4. Course Registration and Add/Drop",
+          "chunk_id": "chk-ca481f226ce2",
+          "text_snippet": "## 4. Course Registration and Add/Drop Students must complete course registration within the registration window published by the Academic Office. Registration is confirmed only after required academic and financial checks are complete. A student should review the final registered-course list and report discrepancies promptly. A student who misses ..."
+        }
+      ],
+      "answer_preview": "According to fee_deadlines.md (Page 2, Payment and dispute procedure):\n\n## Payment and dispute procedure\n\nStudents should retain payment receipts. A student who..."
+    },
+    {
+      "id": "a13",
+      "category": "answerable",
+      "question": "Unless a specific deadline is stated, within how many calendar days should an appeal be submitted?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 17,
+          "section": "16. Appeals and Administrative Review",
+          "chunk_id": "chk-fb15b8bf48e4",
+          "text_snippet": "## 16. Appeals and Administrative Review A student who wishes to appeal an academic or administrative decision should use the appeal process specified by the office responsible for that decision. Unless a more specific deadline is stated in the applicable rule, an appeal should be submitted within fifteen calendar days of the decision. Where a spec..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 15,
+          "section": "14. Student Conduct and Discipline",
+          "chunk_id": "chk-83f655a01876",
+          "text_snippet": "statement. The timing and format of such a process may be communicated by the responsible authority. The corpus does not provide a universal penalty schedule for every type of misconduct. RuleLens must not invent a fixed suspension length, fine amount, or other sanction unless that detail is explicitly present in the evidence. A student subject to ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 17,
+          "section": "16. Appeals and Administrative Review",
+          "chunk_id": "chk-effe99efb197",
+          "text_snippet": "corpus does not establish whether late appeals can ever be accepted for exceptional reasons. An appeal should not be used to invent a rule that is absent from the regulations. If the underlying issue concerns a matter not addressed by this corpus, the student should seek clarification from the responsible authority. Where two published provisions a..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-d5cbfa197384",
+          "text_snippet": "registering for the later course. A prerequisite may be identified in the program curriculum or course catalog. These regulations do not establish a universal list of prerequisites. Changes to the academic calendar may be announced by the Academic Office when circumstances require adjustment. A revised notice should identify the affected dates and ..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 17, 16. Appeals and Administrative Review):\n\n## 16. Appeals and Administrative Review A student who wishes to appeal ..."
+    },
+    {
+      "id": "a14",
+      "category": "answerable",
+      "question": "What regular semesters are included in the Demo University academic year?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-cd25be158c07",
+          "text_snippet": "## 2. Academic Calendar and Semesters The academic year contains two regular semesters, identified as Semester I and Semester II, together with an optional summer term. Semester I normally begins in August and Semester II normally begins in January. Exact teaching, examination, holiday, and registration dates are published by the Academic Office fo..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 1,
+          "section": "Demo University \u2014 Academic & Student Regulations 2026",
+          "chunk_id": "chk-cb19f803c566",
+          "text_snippet": "# Demo University \u2014 Academic & Student Regulations 2026\n\n**Fictional corpus for RuleLens demonstration and evaluation. Not a real university rulebook.**"
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 2,
+          "section": "1. Purpose, Scope, and Authority",
+          "chunk_id": "chk-f0f42caf5980",
+          "text_snippet": "## 1. Purpose, Scope, and Authority These Academic and Student Regulations establish the baseline rules for undergraduate academic administration, student responsibilities, assessment, progression, fees, scholarships, residential life, facilities, conduct, appeals, and graduation at Demo University. The regulations are written as a self-contained f..."
+        },
+        {
+          "document": "academic_regulations_excerpt.pdf",
+          "page": 1,
+          "section": "General Section",
+          "chunk_id": "chk-c53e074db246",
+          "text_snippet": "Demo University \u2014 Academic Regulations 2026\nPDF Extract for RuleLens\nFictional source. This PDF is included to test page-aware extraction and citation.\nPage 1 \u2014 Attendance\nSection 5.1 \u2014 General attendance requirement. A student must maintain at least 75% attendance in a\ncourse to be eligible for the regular end-semester examination."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 3, 2. Academic Calendar and Semesters):\n\n## 2. Academic Calendar and Semesters The academic year contains two regular..."
+    },
+    {
+      "id": "a15",
+      "category": "answerable",
+      "question": "In which month does Semester I normally begin?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-cd25be158c07",
+          "text_snippet": "## 2. Academic Calendar and Semesters The academic year contains two regular semesters, identified as Semester I and Semester II, together with an optional summer term. Semester I normally begins in August and Semester II normally begins in January. Exact teaching, examination, holiday, and registration dates are published by the Academic Office fo..."
+        },
+        {
+          "document": "attendance_circular.md",
+          "page": 2,
+          "section": "1. Regular Examination Eligibility",
+          "chunk_id": "chk-c02b9c7fa693",
+          "text_snippet": "## 1. Regular Examination Eligibility\n\nFor the 2026 academic year, a student must maintain at least **80% attendance** in a course to be eligible for the regular end-semester examination.\n\nDocumented medical absence may be considered according to departmental procedure.\n\nThis circular intentionally differs from Section 5.1 of the main regulations, ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-d5cbfa197384",
+          "text_snippet": "registering for the later course. A prerequisite may be identified in the program curriculum or course catalog. These regulations do not establish a universal list of prerequisites. Changes to the academic calendar may be announced by the Academic Office when circumstances require adjustment. A revised notice should identify the affected dates and ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 21,
+          "section": "20. Final Operational Principles",
+          "chunk_id": "chk-7826ba04e980",
+          "text_snippet": "consecutively on the calendar. \"Working day\" means a day on which the responsible University office ordinarily conducts official business, excluding days identified as University holidays or closures where the applicable procedure so provides. This corpus does not establish a complete holiday calendar. \"Course\" means an academic unit in which a stu..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 3, 2. Academic Calendar and Semesters):\n\n## 2. Academic Calendar and Semesters The academic year contains two regular..."
+    },
+    {
+      "id": "a16",
+      "category": "answerable",
+      "question": "In which month does Semester II normally begin?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-cd25be158c07",
+          "text_snippet": "## 2. Academic Calendar and Semesters The academic year contains two regular semesters, identified as Semester I and Semester II, together with an optional summer term. Semester I normally begins in August and Semester II normally begins in January. Exact teaching, examination, holiday, and registration dates are published by the Academic Office fo..."
+        },
+        {
+          "document": "attendance_circular.md",
+          "page": 2,
+          "section": "1. Regular Examination Eligibility",
+          "chunk_id": "chk-c02b9c7fa693",
+          "text_snippet": "## 1. Regular Examination Eligibility\n\nFor the 2026 academic year, a student must maintain at least **80% attendance** in a course to be eligible for the regular end-semester examination.\n\nDocumented medical absence may be considered according to departmental procedure.\n\nThis circular intentionally differs from Section 5.1 of the main regulations, ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-d5cbfa197384",
+          "text_snippet": "registering for the later course. A prerequisite may be identified in the program curriculum or course catalog. These regulations do not establish a universal list of prerequisites. Changes to the academic calendar may be announced by the Academic Office when circumstances require adjustment. A revised notice should identify the affected dates and ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 21,
+          "section": "20. Final Operational Principles",
+          "chunk_id": "chk-7826ba04e980",
+          "text_snippet": "consecutively on the calendar. \"Working day\" means a day on which the responsible University office ordinarily conducts official business, excluding days identified as University holidays or closures where the applicable procedure so provides. This corpus does not establish a complete holiday calendar. \"Course\" means an academic unit in which a stu..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 3, 2. Academic Calendar and Semesters):\n\n## 2. Academic Calendar and Semesters The academic year contains two regular..."
+    },
+    {
+      "id": "a17",
+      "category": "answerable",
+      "question": "What office is the University's principal academic policy-making body?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 2,
+          "section": "1. Purpose, Scope, and Authority",
+          "chunk_id": "chk-f0f42caf5980",
+          "text_snippet": "## 1. Purpose, Scope, and Authority These Academic and Student Regulations establish the baseline rules for undergraduate academic administration, student responsibilities, assessment, progression, fees, scholarships, residential life, facilities, conduct, appeals, and graduation at Demo University. The regulations are written as a self-contained f..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 19,
+          "section": "18. Records, Privacy, and Administrative Responsibility",
+          "chunk_id": "chk-25a2630926dc",
+          "text_snippet": "## 18. Records, Privacy, and Administrative Responsibility Academic and administrative records should be maintained by the office responsible for the relevant process. Students should provide accurate information and should not knowingly submit false documents. Access to records may be limited according to the University's administrative procedures..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 21,
+          "section": "20. Final Operational Principles",
+          "chunk_id": "chk-d82816ab3373",
+          "text_snippet": "column context during ingestion so that a retrieval system does not separate a date from the fee item to which it belongs. PDF, Markdown, and other document formats are all part of the corpus. Source provenance should survive extraction so that users can inspect where an answer originated. These final principles are especially important for RuleLen..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 20,
+          "section": "19. Student Support and Advising",
+          "chunk_id": "chk-d61d426e2224",
+          "text_snippet": "## 19. Student Support and Advising\n\nStudents may seek academic advising concerning course selection, progression, registration, and other academic matters. Advising is intended to help students understand requirements and make informed decisions.\n\nAn advisor's guidance should not be represented as a formal amendment to a University regulation unle..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 2, 1. Purpose, Scope, and Authority):\n\n## 1. Purpose, Scope, and Authority These Academic and Student Regulations est..."
+    },
+    {
+      "id": "a18",
+      "category": "answerable",
+      "question": "Which office is primarily responsible for maintaining students' academic records?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 19,
+          "section": "18. Records, Privacy, and Administrative Responsibility",
+          "chunk_id": "chk-25a2630926dc",
+          "text_snippet": "## 18. Records, Privacy, and Administrative Responsibility Academic and administrative records should be maintained by the office responsible for the relevant process. Students should provide accurate information and should not knowingly submit false documents. Access to records may be limited according to the University's administrative procedures..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 4,
+          "section": "3. Admission, Enrollment, and Student Status",
+          "chunk_id": "chk-9d9036d8844a",
+          "text_snippet": "## 3. Admission, Enrollment, and Student Status A student becomes enrolled after completing the University's admission and enrollment requirements. Enrollment may require submission of academic records, identity documents, photographs, declarations, and other materials identified in the admission notice. This corpus does not establish an exhaustive..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 2,
+          "section": "1. Purpose, Scope, and Authority",
+          "chunk_id": "chk-f0f42caf5980",
+          "text_snippet": "## 1. Purpose, Scope, and Authority These Academic and Student Regulations establish the baseline rules for undergraduate academic administration, student responsibilities, assessment, progression, fees, scholarships, residential life, facilities, conduct, appeals, and graduation at Demo University. The regulations are written as a self-contained f..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 13,
+          "section": "12. Library and Campus Facilities",
+          "chunk_id": "chk-0321d6a3beff",
+          "text_snippet": "Students should not attempt to bypass access controls or interfere with another user's account. The University may temporarily close or restrict a facility for maintenance, examinations, safety, or other operational reasons. The corpus does not establish a universal notice period for every closure. Questions about a specific library fine, equipment..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 19, 18. Records, Privacy, and Administrative Responsibility):\n\n## 18. Records, Privacy, and Administrative Responsibi..."
+    },
+    {
+      "id": "a19",
+      "category": "answerable",
+      "question": "What creates an academic backlog under University regulations?",
+      "expected_status": "ANSWERED",
+      "actual_status": "ANSWERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 9,
+          "section": "8. Academic Progression and Backlogs",
+          "chunk_id": "chk-5eca48c68691",
+          "text_snippet": "## 8. Academic Progression and Backlogs Academic standing is determined at the end of each regular semester using the student's completed credits, grades, and applicable progression rules. The progression rules for a specific program may contain additional conditions. A backlog is created when a student receives a failing grade in a course that is ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 8,
+          "section": "7. Grading, Grade Review, and Reassessment",
+          "chunk_id": "chk-01d24a649761",
+          "text_snippet": "recorded according to the rules published for that examination cycle. This corpus does not specify a universal maximum number of improvement attempts. Students should distinguish between grade review, reassessment, and grade improvement. A grade review examines a recorded result; reassessment provides an additional assessment opportunity where offe..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 16,
+          "section": "15. Graduation and Degree Completion",
+          "chunk_id": "chk-65eb68fc3d1f",
+          "text_snippet": "not infer a graduation CGPA threshold from the merit scholarship requirement. A student with an unresolved backlog is ordinarily not complete for graduation purposes if the backlog represents a required course or academic requirement. Program-specific exceptions must be supported by an authorized provision. Students should follow published instruct..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 16,
+          "section": "15. Graduation and Degree Completion",
+          "chunk_id": "chk-56d5ed82bd28",
+          "text_snippet": "## 15. Graduation and Degree Completion A student may graduate only after completing the credit, course, assessment, and other requirements prescribed for the student's program. All required courses must be successfully completed unless an approved program-specific exception applies. A student should review the official academic record before the f..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 9, 8. Academic Progression and Backlogs):\n\n## 8. Academic Progression and Backlogs Academic standing is determined at..."
+    },
+    {
+      "id": "a20",
+      "category": "answerable",
+      "question": "What notice ID is assigned to the Fee and Deadline Notice 2026?",
+      "expected_status": "ANSWERED",
+      "actual_status": "CONFLICT",
+      "status_correct": false,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "fee_deadlines.md",
+          "page": 1,
+          "section": "Demo University \u2014 Fee and Deadline Notice 2026",
+          "chunk_id": "chk-b0cc7801a915",
+          "text_snippet": "# Demo University \u2014 Fee and Deadline Notice 2026\n\n**Notice ID:** FIN-2026-08  \n**Published:** 1 August 2026  \n**Status:** Fictional RuleLens test source\n\n| Fee item | Standard deadline | Consequence after deadline |\n|---|---|---|\n| Semester tuition | 20 August 2026 | Late fee may apply |\n| Examination fee | 20 September 2026 | Examination registrat..."
+        },
+        {
+          "document": "attendance_circular.md",
+          "page": 1,
+          "section": "Demo University \u2014 Attendance Circular 2026",
+          "chunk_id": "chk-49e94cd0a32f",
+          "text_snippet": "# Demo University \u2014 Attendance Circular 2026\n\n**Notice ID:** ATT-2026-01  \n**Status:** Fictional RuleLens test source"
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 3,
+          "section": "2. Academic Calendar and Semesters",
+          "chunk_id": "chk-d5cbfa197384",
+          "text_snippet": "registering for the later course. A prerequisite may be identified in the program curriculum or course catalog. These regulations do not establish a universal list of prerequisites. Changes to the academic calendar may be announced by the Academic Office when circumstances require adjustment. A revised notice should identify the affected dates and ..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    },
+    {
+      "id": "u01",
+      "category": "unanswerable",
+      "question": "Can a student miss an examination to attend a family wedding?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Can a student miss an examination to attend a family wedding?'. RuleLens only provides verifie..."
+    },
+    {
+      "id": "u02",
+      "category": "unanswerable",
+      "question": "What is the maximum number of books an undergraduate student can borrow from the library?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "ANSWERED",
+      "status_correct": false,
+      "citation_correct": false,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 13,
+          "section": "12. Library and Campus Facilities",
+          "chunk_id": "chk-73becd6560ba",
+          "text_snippet": "## 12. Library and Campus Facilities Students may borrow library materials subject to the borrowing limits applicable to their student category. Overdue materials may result in fines or temporary borrowing restrictions. The library renewal fee appears in the fee schedule with a standard deadline of 30 August 2026. The stated consequence is that lib..."
+        },
+        {
+          "document": "academic_regulations_excerpt.pdf",
+          "page": 1,
+          "section": "General Section",
+          "chunk_id": "chk-c53e074db246",
+          "text_snippet": "Demo University \u2014 Academic Regulations 2026\nPDF Extract for RuleLens\nFictional source. This PDF is included to test page-aware extraction and citation.\nPage 1 \u2014 Attendance\nSection 5.1 \u2014 General attendance requirement. A student must maintain at least 75% attendance in a\ncourse to be eligible for the regular end-semester examination."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 21,
+          "section": "20. Final Operational Principles",
+          "chunk_id": "chk-142dc13d69c4",
+          "text_snippet": "retrieval system should preserve headings and nearby text. If it retrieves \"20 September 2026\" without the row label \"Examination fee,\" the evidence is incomplete. If it retrieves \"8.00/10.00\" without the phrase \"Demo University Merit Scholarship,\" the evidence may be insufficient for a question about that particular scholarship. For source viewing..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 13,
+          "section": "12. Library and Campus Facilities",
+          "chunk_id": "chk-0321d6a3beff",
+          "text_snippet": "Students should not attempt to bypass access controls or interfere with another user's account. The University may temporarily close or restrict a facility for maintenance, examinations, safety, or other operational reasons. The corpus does not establish a universal notice period for every closure. Questions about a specific library fine, equipment..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 13, 12. Library and Campus Facilities):\n\n## 12. Library and Campus Facilities Students may borrow library materials s..."
+    },
+    {
+      "id": "u03",
+      "category": "unanswerable",
+      "question": "What is the exact curfew time for university residence halls?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'What is the exact curfew time for university residence halls?'. RuleLens only provides verifie..."
+    },
+    {
+      "id": "u04",
+      "category": "unanswerable",
+      "question": "What is the minimum CGPA required for campus placement registration?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "ANSWERED",
+      "status_correct": false,
+      "citation_correct": false,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 9,
+          "section": "8. Academic Progression and Backlogs",
+          "chunk_id": "chk-29930582f443",
+          "text_snippet": "appeal process where one exists. Academic progression and placement eligibility are separate concepts unless an official rule expressly connects them. These regulations do not establish a general minimum CGPA for placement registration. A student's total credits, failed courses, current enrollment, and program requirements may all affect progressio..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 16,
+          "section": "15. Graduation and Degree Completion",
+          "chunk_id": "chk-65eb68fc3d1f",
+          "text_snippet": "not infer a graduation CGPA threshold from the merit scholarship requirement. A student with an unresolved backlog is ordinarily not complete for graduation purposes if the backlog represents a required course or academic requirement. Program-specific exceptions must be supported by an authorized provision. Students should follow published instruct..."
+        },
+        {
+          "document": "scholarship_notice.md",
+          "page": 3,
+          "section": "2. Eligibility",
+          "chunk_id": "chk-46a82df81960",
+          "text_snippet": "## 2. Eligibility\n\nAn undergraduate student must have a cumulative GPA of **at least 8.50/10.00** and must have no active disciplinary penalty at the time of award."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 9,
+          "section": "8. Academic Progression and Backlogs",
+          "chunk_id": "chk-5eca48c68691",
+          "text_snippet": "## 8. Academic Progression and Backlogs Academic standing is determined at the end of each regular semester using the student's completed credits, grades, and applicable progression rules. The progression rules for a specific program may contain additional conditions. A backlog is created when a student receives a failing grade in a course that is ..."
+        }
+      ],
+      "answer_preview": "The university regulations do not set a specific CGPA threshold for campus placement registration.  \n*Academic_regulations.md, Page\u202f9, Section\u202f8* states that \u201cT..."
+    },
+    {
+      "id": "u05",
+      "category": "unanswerable",
+      "question": "What is the exact monetary late registration penalty fee in dollars?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "ANSWERED",
+      "status_correct": false,
+      "citation_correct": false,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-ce8b9331bf8a",
+          "text_snippet": "result in an administrative or registration hold. A hold may prevent course additions or other processes until the underlying issue is resolved. The specific consequences of a particular hold may depend on the responsible office. Refunds, where available, are governed by the applicable fee or withdrawal notice. These regulations do not establish a ..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 2,
+          "section": "Payment and dispute procedure",
+          "chunk_id": "chk-7986dbf32819",
+          "text_snippet": "## Payment and dispute procedure\n\nStudents should retain payment receipts. A student who believes a fee has been charged incorrectly may submit a written dispute to the Finance Office within ten calendar days of the charge appearing in the student account.\n\nThe semester tuition deadline above intentionally differs from Section 10 of the main regula..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 5,
+          "section": "4. Course Registration and Add/Drop",
+          "chunk_id": "chk-ca481f226ce2",
+          "text_snippet": "## 4. Course Registration and Add/Drop Students must complete course registration within the registration window published by the Academic Office. Registration is confirmed only after required academic and financial checks are complete. A student should review the final registered-course list and report discrepancies promptly. A student who misses ..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 11, 10. Fees, Payment, Refunds, and Financial Holds):\n\n## 10. Fees, Payment, Refunds, and Financial Holds University ..."
+    },
+    {
+      "id": "u06",
+      "category": "unanswerable",
+      "question": "What is the hourly student worker wage on campus?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "ANSWERED",
+      "status_correct": false,
+      "citation_correct": false,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-3eea239d6eaa",
+          "text_snippet": "## 11. Hostel and Residential Life Hostel allocation is subject to availability, program requirements, and the University's residential rules. An allocation is not guaranteed merely because a student submits an application. Students receiving a room allocation must complete the required residential check-in process. Check-in may require identity ve..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 13,
+          "section": "12. Library and Campus Facilities",
+          "chunk_id": "chk-73becd6560ba",
+          "text_snippet": "## 12. Library and Campus Facilities Students may borrow library materials subject to the borrowing limits applicable to their student category. Overdue materials may result in fines or temporary borrowing restrictions. The library renewal fee appears in the fee schedule with a standard deadline of 30 August 2026. The stated consequence is that lib..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 12, 11. Hostel and Residential Life):\n\n## 11. Hostel and Residential Life Hostel allocation is subject to availabilit..."
+    },
+    {
+      "id": "u07",
+      "category": "unanswerable",
+      "question": "Are dogs and pets allowed inside university residential dormitories?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Are dogs and pets allowed inside university residential dormitories?'. RuleLens only provides ..."
+    },
+    {
+      "id": "u08",
+      "category": "unanswerable",
+      "question": "Can students pay university tuition fees using cryptocurrency or Bitcoin?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Can students pay university tuition fees using cryptocurrency or Bitcoin?'. RuleLens only prov..."
+    },
+    {
+      "id": "u09",
+      "category": "unanswerable",
+      "question": "What is the universal numerical conversion table between raw marks and letter grades?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "ANSWERED",
+      "status_correct": false,
+      "citation_correct": false,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 8,
+          "section": "7. Grading, Grade Review, and Reassessment",
+          "chunk_id": "chk-66665a2a6b8a",
+          "text_snippet": "## 7. Grading, Grade Review, and Reassessment The University uses letter grades from A through F. A grade of F is a failing grade. The detailed conversion between numerical marks and letter grades is not specified in this corpus and should not be invented by the system. A student may request a review of a recorded grade within ten calendar days of ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 21,
+          "section": "20. Final Operational Principles",
+          "chunk_id": "chk-142dc13d69c4",
+          "text_snippet": "retrieval system should preserve headings and nearby text. If it retrieves \"20 September 2026\" without the row label \"Examination fee,\" the evidence is incomplete. If it retrieves \"8.00/10.00\" without the phrase \"Demo University Merit Scholarship,\" the evidence may be insufficient for a question about that particular scholarship. For source viewing..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 21,
+          "section": "20. Final Operational Principles",
+          "chunk_id": "chk-f041dd14c242",
+          "text_snippet": "may differ by scholarship. \"Registration hold\" means an administrative restriction placed on a student's account under an applicable rule. A hold may affect registration or other processes, depending on the reason and responsible office. # Appendix B \u2014 Evidence Handling Notes for RuleLens The corpus intentionally contains both general regulations a..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 7,
+          "section": "6. Examinations and Assessment",
+          "chunk_id": "chk-ee8d24b9de4c",
+          "text_snippet": "Student Conduct Code. The regulations do not prescribe a single automatic penalty for every allegation. Students must follow instructions issued by examination supervisors. A student who does not understand an examination instruction should seek clarification through the permitted examination procedure rather than relying on assumptions. A student'..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 8, 7. Grading, Grade Review, and Reassessment):\n\n## 7. Grading, Grade Review, and Reassessment The University uses le..."
+    },
+    {
+      "id": "u10",
+      "category": "unanswerable",
+      "question": "Does the university provide a travel grant for undergraduate conference presentations?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Does the university provide a travel grant for undergraduate conference presentations?'. RuleL..."
+    },
+    {
+      "id": "u11",
+      "category": "unanswerable",
+      "question": "Can a student park a motorcycle inside the university dormitory basement?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Can a student park a motorcycle inside the university dormitory basement?'. RuleLens only prov..."
+    },
+    {
+      "id": "u12",
+      "category": "unanswerable",
+      "question": "Does the university provide free Adobe Creative Cloud subscriptions for students?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Does the university provide free Adobe Creative Cloud subscriptions for students?'. RuleLens o..."
+    },
+    {
+      "id": "u13",
+      "category": "unanswerable",
+      "question": "What graphing calculator model is mandatory for calculus exams?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'What graphing calculator model is mandatory for calculus exams?'. RuleLens only provides verif..."
+    },
+    {
+      "id": "u14",
+      "category": "unanswerable",
+      "question": "Are kosher and halal meal options available in all residence halls?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Are kosher and halal meal options available in all residence halls?'. RuleLens only provides v..."
+    },
+    {
+      "id": "u15",
+      "category": "unanswerable",
+      "question": "What are the rules for joining the university esports competitive gaming team?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'What are the rules for joining the university esports competitive gaming team?'. RuleLens only..."
+    },
+    {
+      "id": "u16",
+      "category": "unanswerable",
+      "question": "What is the minimum age requirement to enroll in undergraduate courses?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'What is the minimum age requirement to enroll in undergraduate courses?'. RuleLens only provid..."
+    },
+    {
+      "id": "u17",
+      "category": "unanswerable",
+      "question": "Can student campaign posters be displayed on academic building walls during elections?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Can student campaign posters be displayed on academic building walls during elections?'. RuleL..."
+    },
+    {
+      "id": "u18",
+      "category": "unanswerable",
+      "question": "What is the free semester printing quota allowance for students?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'What is the free semester printing quota allowance for students?'. RuleLens only provides veri..."
+    },
+    {
+      "id": "u19",
+      "category": "unanswerable",
+      "question": "How much does it cost to rent a gym locker at the campus recreation center?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'How much does it cost to rent a gym locker at the campus recreation center?'. RuleLens only pr..."
+    },
+    {
+      "id": "u20",
+      "category": "unanswerable",
+      "question": "Can students waive the mandatory health surcharge without paying?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Can students waive the mandatory health surcharge without paying?'. RuleLens only provides ver..."
+    },
+    {
+      "id": "u21",
+      "category": "unanswerable",
+      "question": "Does the student health insurance plan cover dental and orthodontic work?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Does the student health insurance plan cover dental and orthodontic work?'. RuleLens only prov..."
+    },
+    {
+      "id": "u22",
+      "category": "unanswerable",
+      "question": "What is the maximum degree completion duration in years for an undergraduate program?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "ANSWERED",
+      "status_correct": false,
+      "citation_correct": false,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 16,
+          "section": "15. Graduation and Degree Completion",
+          "chunk_id": "chk-56d5ed82bd28",
+          "text_snippet": "## 15. Graduation and Degree Completion A student may graduate only after completing the credit, course, assessment, and other requirements prescribed for the student's program. All required courses must be successfully completed unless an approved program-specific exception applies. A student should review the official academic record before the f..."
+        },
+        {
+          "document": "scholarship_notice.md",
+          "page": 3,
+          "section": "2. Eligibility",
+          "chunk_id": "chk-46a82df81960",
+          "text_snippet": "## 2. Eligibility\n\nAn undergraduate student must have a cumulative GPA of **at least 8.50/10.00** and must have no active disciplinary penalty at the time of award."
+        },
+        {
+          "document": "attendance_circular.md",
+          "page": 2,
+          "section": "1. Regular Examination Eligibility",
+          "chunk_id": "chk-c02b9c7fa693",
+          "text_snippet": "## 1. Regular Examination Eligibility\n\nFor the 2026 academic year, a student must maintain at least **80% attendance** in a course to be eligible for the regular end-semester examination.\n\nDocumented medical absence may be considered according to departmental procedure.\n\nThis circular intentionally differs from Section 5.1 of the main regulations, ..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 9,
+          "section": "8. Academic Progression and Backlogs",
+          "chunk_id": "chk-29930582f443",
+          "text_snippet": "appeal process where one exists. Academic progression and placement eligibility are separate concepts unless an official rule expressly connects them. These regulations do not establish a general minimum CGPA for placement registration. A student's total credits, failed courses, current enrollment, and program requirements may all affect progressio..."
+        }
+      ],
+      "answer_preview": "According to academic_regulations.md (Page 16, 15. Graduation and Degree Completion):\n\n## 15. Graduation and Degree Completion A student may graduate only after..."
+    },
+    {
+      "id": "u23",
+      "category": "unanswerable",
+      "question": "Can undergraduate students apply for a study abroad semester in Tokyo Japan?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Can undergraduate students apply for a study abroad semester in Tokyo Japan?'. RuleLens only p..."
+    },
+    {
+      "id": "u24",
+      "category": "unanswerable",
+      "question": "How many free clinical therapy sessions are granted by the university psychological center?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'How many free clinical therapy sessions are granted by the university psychological center?'. ..."
+    },
+    {
+      "id": "u25",
+      "category": "unanswerable",
+      "question": "Can I receive university course credit for middle school coursework completed before ninth grade?",
+      "expected_status": "NOT_COVERED",
+      "actual_status": "NOT_COVERED",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 0,
+      "sources": [],
+      "answer_preview": "The official regulations for Demo University 2026 do not mention 'Can I receive university course credit for middle school coursework completed before ninth gra..."
+    },
+    {
+      "id": "c01",
+      "category": "contradiction",
+      "question": "What is the minimum attendance requirement to appear for regular final examinations?",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "attendance_circular.md",
+          "page": 2,
+          "section": "1. Regular Examination Eligibility",
+          "chunk_id": "chk-c02b9c7fa693",
+          "text_snippet": "## 1. Regular Examination Eligibility\n\nFor the 2026 academic year, a student must maintain at least **80% attendance** in a course to be eligible for the regular end-semester examination.\n\nDocumented medical absence may be considered according to departmental procedure.\n\nThis circular intentionally differs from Section 5.1 of the main regulations, ..."
+        },
+        {
+          "document": "academic_regulations_excerpt.pdf",
+          "page": 1,
+          "section": "General Section",
+          "chunk_id": "chk-c53e074db246",
+          "text_snippet": "Demo University \u2014 Academic Regulations 2026\nPDF Extract for RuleLens\nFictional source. This PDF is included to test page-aware extraction and citation.\nPage 1 \u2014 Attendance\nSection 5.1 \u2014 General attendance requirement. A student must maintain at least 75% attendance in a\ncourse to be eligible for the regular end-semester examination."
+        },
+        {
+          "document": "academic_regulations_excerpt.pdf",
+          "page": 2,
+          "section": "General Section",
+          "chunk_id": "chk-c68d0f8f0269",
+          "text_snippet": "Page 2 \u2014 Examination absence\nSection 6.2 \u2014 Examination absence. A student who misses an examination must submit an absence\nexplanation to the Academic Office within three working days. Approval of a special examination is not\nautomatic."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 7,
+          "section": "6. Examinations and Assessment",
+          "chunk_id": "chk-bbc82fa3c93c",
+          "text_snippet": "## 6. Examinations and Assessment A student who satisfies course attendance requirements and has completed required academic work may appear in the regular end-semester examination. Course-specific assessment requirements may include assignments, laboratories, projects, presentations, or other components. A student who misses an examination must su..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 5.1 (academic_regulations.md): A student must maintain at least 75% attendance in a ..."
+    },
+    {
+      "id": "c02",
+      "category": "contradiction",
+      "question": "What is the minimum cumulative GPA required for the Demo University Merit Scholarship?",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "scholarship_notice.md",
+          "page": 3,
+          "section": "2. Eligibility",
+          "chunk_id": "chk-46a82df81960",
+          "text_snippet": "## 2. Eligibility\n\nAn undergraduate student must have a cumulative GPA of **at least 8.50/10.00** and must have no active disciplinary penalty at the time of award."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 10,
+          "section": "9. Scholarships and Financial Assistance",
+          "chunk_id": "chk-e78c9104efec",
+          "text_snippet": "## 9. Scholarships and Financial Assistance University-funded scholarships are subject to the eligibility criteria stated in the relevant scholarship notice. A scholarship is not automatically awarded merely because a student meets one eligibility criterion. For the Demo University Merit Scholarship, an undergraduate student must have a cumulative ..."
+        },
+        {
+          "document": "scholarship_notice.md",
+          "page": 2,
+          "section": "1. Scope",
+          "chunk_id": "chk-faa830bf0a0f",
+          "text_snippet": "## 1. Scope\n\nThis notice concerns the Demo University Merit Scholarship for undergraduate students."
+        },
+        {
+          "document": "scholarship_notice.md",
+          "page": 1,
+          "section": "Demo University \u2014 Merit Scholarship Notice 2026",
+          "chunk_id": "chk-57a3f8142014",
+          "text_snippet": "# Demo University \u2014 Merit Scholarship Notice 2026\n\n**Notice ID:** SCH-2026-01  \n**Award cycle:** 2026  \n**Status:** Fictional RuleLens test source"
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 9.2 (academic_regulations.md): For the Demo University Merit Scholarship, an undergr..."
+    },
+    {
+      "id": "c03",
+      "category": "contradiction",
+      "question": "What is the deadline for paying semester tuition?",
+      "expected_status": "CONFLICT",
+      "actual_status": "CONFLICT",
+      "status_correct": true,
+      "citation_correct": true,
+      "sources_count": 4,
+      "sources": [
+        {
+          "document": "academic_regulations.md",
+          "page": 11,
+          "section": "10. Fees, Payment, Refunds, and Financial Holds",
+          "chunk_id": "chk-08039b0940b3",
+          "text_snippet": "## 10. Fees, Payment, Refunds, and Financial Holds University fees may be paid through the University's designated online payment portal or another payment method officially announced by the Finance Office. Students should retain payment receipts and transaction references. The standard academic fee schedule is reproduced in a separate mixed-format..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 2,
+          "section": "Payment and dispute procedure",
+          "chunk_id": "chk-7986dbf32819",
+          "text_snippet": "## Payment and dispute procedure\n\nStudents should retain payment receipts. A student who believes a fee has been charged incorrectly may submit a written dispute to the Finance Office within ten calendar days of the charge appearing in the student account.\n\nThe semester tuition deadline above intentionally differs from Section 10 of the main regula..."
+        },
+        {
+          "document": "academic_regulations.md",
+          "page": 12,
+          "section": "11. Hostel and Residential Life",
+          "chunk_id": "chk-14c1f1f1b983",
+          "text_snippet": "The hostel fee is listed in the fee schedule with a standard deadline of 10 August 2026. The listed consequence of missing that deadline is that room allocation may be withheld. Students leaving University housing should complete the checkout process and return University property. Outstanding charges or unreturned property may delay financial or a..."
+        },
+        {
+          "document": "fee_deadlines.md",
+          "page": 1,
+          "section": "Demo University \u2014 Fee and Deadline Notice 2026",
+          "chunk_id": "chk-b0cc7801a915",
+          "text_snippet": "# Demo University \u2014 Fee and Deadline Notice 2026\n\n**Notice ID:** FIN-2026-08  \n**Published:** 1 August 2026  \n**Status:** Fictional RuleLens test source\n\n| Fee item | Standard deadline | Consequence after deadline |\n|---|---|---|\n| Semester tuition | 20 August 2026 | Late fee may apply |\n| Examination fee | 20 September 2026 | Examination registrat..."
+        }
+      ],
+      "answer_preview": "The university rules have conflicting statements on this matter.\n\n* Section 10 (academic_regulations.md): The semester tuition deadline in the main regulations ..."
+    }
+  ]
+}
