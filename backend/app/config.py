@@ -20,13 +20,13 @@ class Settings(BaseSettings):
     # Core App
     APP_NAME: str = "RuleLens"
     ENVIRONMENT: str = "development"
-    DEBUG: bool = True
+    DEBUG: bool = False
     PORT: int = 8000
     HOST: str = "0.0.0.0"
-    CORS_ORIGINS: Union[List[str], str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    CORS_ORIGINS: Union[List[str], str] = ["*"]
 
-    # Database
-    DATABASE_URL: str = "postgresql+psycopg://postgres:postgres@localhost:5434/rulelens"
+    # Database — loaded strictly from environment variable DATABASE_URL
+    DATABASE_URL: str = Field(default="", description="PostgreSQL connection string loaded from environment")
     DB_POOL_SIZE: int = 5
     DB_MAX_OVERFLOW: int = 10
     DB_ECHO: bool = False
@@ -35,14 +35,25 @@ class Settings(BaseSettings):
     EMBEDDING_MODEL: str = "BAAI/bge-small-en-v1.5"
     EMBEDDING_DIMENSION: int = 384
 
-    # LLM Providers (for future phases)
-    GROQ_API_KEY: str = ""
-    GEMINI_API_KEY: str = ""
+    # LLM Providers — loaded strictly from environment variables
+    GROQ_API_KEY: str = Field(default="")
+    GEMINI_API_KEY: str = Field(default="")
     LLM_PROVIDER: str = "gemini"
 
-    # Admin Panel
-    ADMIN_API_KEY: str = "rulelens-admin"
+    # Admin Panel — loaded strictly from environment variable ADMIN_API_KEY
+    ADMIN_API_KEY: str = Field(default="", description="Admin API key loaded from environment")
     MAX_UPLOAD_SIZE_MB: int = 20
+
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def normalize_database_url(cls, v: str) -> str:
+        if not v:
+            return ""
+        if v.startswith("postgres://"):
+            return "postgresql+psycopg://" + v[len("postgres://"):]
+        elif v.startswith("postgresql://") and not v.startswith("postgresql+"):
+            return "postgresql+psycopg://" + v[len("postgresql://"):]
+        return v
 
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod

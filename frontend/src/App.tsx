@@ -126,7 +126,7 @@ export const App: React.FC = () => {
       const errorMsg: ChatMessage = {
         id: `err-${Date.now()}`,
         role: 'assistant',
-        content: `Error connecting to backend API: ${err.message}. Ensure backend is running at http://127.0.0.1:8000.`,
+        content: `Error connecting to backend API: ${err.message}. Ensure the backend service is running and reachable.`,
         timestamp: new Date().toISOString(),
       };
       setMessages((prev) => [...prev, errorMsg]);
