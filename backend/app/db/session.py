@@ -4,6 +4,7 @@ from typing import Generator, Tuple, Optional
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker, Session
 
+from fastapi import HTTPException
 from app.config import settings
 
 logger = logging.getLogger(__name__)
@@ -27,7 +28,7 @@ except Exception as e:
 def get_db() -> Generator[Session, None, None]:
     """FastAPI dependency for database sessions."""
     if SessionLocal is None:
-        raise RuntimeError("Database engine is not configured.")
+        raise HTTPException(status_code=503, detail="Database engine is not configured. Verify DATABASE_URL.")
     db = SessionLocal()
     try:
         yield db
