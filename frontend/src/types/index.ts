@@ -40,10 +40,4 @@ export interface SystemHealth {
     latency_ms: number;
     error?: string | null;
   };
-  redis?: {
-    enabled: boolean;
-    connected: boolean;
-    latency_ms: number;
-    error?: string | null;
-  };
 }

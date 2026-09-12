@@ -1,6 +1,6 @@
 import React from 'react';
 import { SystemHealth } from '../types';
-import { RefreshCw, ShieldCheck, Moon, Sun } from 'lucide-react';
+import { RefreshCw, ShieldCheck, Moon, Sun, Settings } from 'lucide-react';
 
 interface HeaderProps {
   health: SystemHealth | null;
@@ -89,6 +89,15 @@ export const Header: React.FC<HeaderProps> = ({
           >
             {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
           </button>
+
+          {/* Admin Panel link */}
+          <a
+            href="/admin"
+            title="Admin Panel — manage uploaded documents"
+            className="p-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors border border-border bg-surface"
+          >
+            <Settings className="w-4 h-4" />
+          </a>
 
           {/* Authority reminder */}
           <div className="hidden lg:flex items-center gap-1.5 text-xs text-muted-foreground pl-2">

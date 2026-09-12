@@ -26,15 +26,10 @@ class Settings(BaseSettings):
     CORS_ORIGINS: Union[List[str], str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
 
     # Database
-    DATABASE_URL: str = "postgresql+psycopg://postgres:postgres@localhost:5432/rulelens"
+    DATABASE_URL: str = "postgresql+psycopg://postgres:postgres@localhost:5434/rulelens"
     DB_POOL_SIZE: int = 5
     DB_MAX_OVERFLOW: int = 10
     DB_ECHO: bool = False
-
-    # Redis
-    REDIS_URL: str = "redis://localhost:6379/0"
-    REDIS_ENABLED: bool = True
-    REDIS_TIMEOUT_SECONDS: float = 2.0
 
     # Embeddings & Vector
     EMBEDDING_MODEL: str = "BAAI/bge-small-en-v1.5"
@@ -44,6 +39,10 @@ class Settings(BaseSettings):
     GROQ_API_KEY: str = ""
     GEMINI_API_KEY: str = ""
     LLM_PROVIDER: str = "gemini"
+
+    # Admin Panel
+    ADMIN_API_KEY: str = "rulelens-admin"
+    MAX_UPLOAD_SIZE_MB: int = 20
 
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod

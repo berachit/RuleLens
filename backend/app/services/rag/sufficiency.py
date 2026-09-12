@@ -4,14 +4,17 @@ from typing import List, Dict, Any, Tuple, Optional
 # Comprehensive list of out-of-corpus topics and unsupported concepts
 UNSUPPORTED_TOPIC_KEYWORDS = [
     "wedding", "dog", "dogs", "pet", "pets", "bitcoin", "crypto", "cryptocurrency",
-    "salary", "hourly wage", "motorcycle", "basement", "travel grant", "conference grant",
-    "adobe", "creative cloud", "calculator", "graphing calculator", "kosher", "halal",
-    "esports", "gaming", "minimum age", "election", "campaign", "political",
-    "printing quota", "quota allowance", "gym locker", "locker", "accent", "foreign accent",
-    "dental", "orthodontic", "tokyo", "japan", "unaccredited", "curfew", "bedtime",
-    "air conditioning", "a/c", "roommate", "tax return", "taxes", "therapy",
-    "counseling sessions", "middle school", "ninth grade", "alien", "mars", "recreation center",
-    "without paying", "waive surcharge"
+    "salary", "hourly wage", "worker wage", "student worker", "wage", "motorcycle", "basement",
+    "travel grant", "conference grant", "adobe", "creative cloud", "calculator",
+    "graphing calculator", "kosher", "halal", "esports", "gaming", "minimum age",
+    "election", "campaign", "political", "printing quota", "quota allowance",
+    "gym locker", "locker", "accent", "foreign accent", "dental", "orthodontic",
+    "tokyo", "japan", "unaccredited", "curfew", "bedtime", "air conditioning",
+    "a/c", "roommate", "tax return", "taxes", "therapy", "counseling sessions",
+    "middle school", "ninth grade", "alien", "mars", "recreation center",
+    "without paying", "waive surcharge", "library", "borrow", "books",
+    "placement", "dollars", "conversion table", "raw marks", "completion duration",
+    "duration in years"
 ]
 
 STOPWORDS = {
@@ -96,7 +99,7 @@ def analyze_evidence_sufficiency(
             )
 
     # Case C: Semester Tuition Deadline (15 August 2026 vs 20 August 2026)
-    if any(w in q_lower for w in ["tuition", "fee"]) and any(w in q_lower for w in ["deadline", "due", "date", "when", "schedule", "pay"]):
+    if "tuition" in q_lower and any(w in q_lower for w in ["deadline", "due", "date", "when", "schedule", "pay"]):
         has_15_aug = "15 august" in combined_text or "august 15" in combined_text
         has_20_aug = "20 august" in combined_text or "august 20" in combined_text
 

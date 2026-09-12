@@ -3,6 +3,7 @@ import { SourceCitation } from '../types';
 import { FileText, Bookmark, ArrowLeft, Printer, Sparkles } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { fetchDocumentContent, fetchSourceChunk } from '../services/api';
 
 interface FullDocViewerProps {
   citation: SourceCitation;
@@ -20,18 +21,18 @@ export const FullDocViewer: React.FC<FullDocViewerProps> = ({ citation, onBack }
       setIsLoading(true);
       try {
         // 1. Fetch full document content
-        const docRes = await fetch(`/api/documents/${encodeURIComponent(citation.document)}/content`);
-        if (docRes.ok) {
-          const docData = await docRes.json();
+        try {
+          const docData = await fetchDocumentContent(citation.document);
           setDocContent(docData.content || '');
+        } catch {
+          setDocContent('');
         }
 
         // 2. Fetch chunk text
-        const chunkRes = await fetch(`/api/sources/${encodeURIComponent(citation.chunk_id)}`);
-        if (chunkRes.ok) {
-          const chunkData = await chunkRes.json();
+        try {
+          const chunkData = await fetchSourceChunk(citation.chunk_id);
           setChunkText(chunkData.text || citation.text_snippet || '');
-        } else {
+        } catch {
           setChunkText(citation.text_snippet || '');
         }
       } catch (err) {

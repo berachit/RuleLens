@@ -34,10 +34,10 @@ def test_health_endpoint_structure():
     assert "connected" in data["database"]
     assert "latency_ms" in data["database"]
 
-    # Redis status
-    assert "redis" in data
-    assert "enabled" in data["redis"]
-    assert "connected" in data["redis"]
+    # Corpus status
+    assert "corpus" in data
+    assert "loaded" in data["corpus"]
+    assert "chunks_count" in data["corpus"]
 
 
 def test_config_isolation():

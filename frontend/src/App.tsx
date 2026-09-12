@@ -4,18 +4,11 @@ import { HeroComposer } from './components/HeroComposer';
 import { ChatInterface } from './components/ChatInterface';
 import { SourceViewer } from './components/SourceViewer';
 import { FullDocViewer } from './components/FullDocViewer';
+import { AdminPanel } from './components/AdminPanel';
 import { ChatMessage, SourceCitation, SystemHealth } from './types';
 import { fetchHealth, sendQuery } from './services/api';
 
 export const App: React.FC = () => {
-  const [health, setHealth] = useState<SystemHealth | null>(null);
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
-  const [selectedCitation, setSelectedCitation] = useState<SourceCitation | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [standaloneDocCitation, setStandaloneDocCitation] = useState<SourceCitation | null>(null);
-
-  const [isConnectionFailed, setIsConnectionFailed] = useState<boolean>(false);
-
   // Theme state: defaults to system preference, remembers user preference in localStorage
   const [isDark, setIsDark] = useState<boolean>(() => {
     const saved = localStorage.getItem('rulelens-theme');
@@ -30,6 +23,27 @@ export const App: React.FC = () => {
       document.documentElement.classList.remove('dark');
     }
   }, [isDark]);
+
+  const handleToggleTheme = () => {
+    setIsDark((prev) => {
+      const next = !prev;
+      localStorage.setItem('rulelens-theme', next ? 'dark' : 'light');
+      return next;
+    });
+  };
+
+  // Render admin panel for /admin path
+  if (window.location.pathname.startsWith('/admin')) {
+    return <AdminPanel isDark={isDark} onToggleTheme={handleToggleTheme} />;
+  }
+
+  const [health, setHealth] = useState<SystemHealth | null>(null);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [selectedCitation, setSelectedCitation] = useState<SourceCitation | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [standaloneDocCitation, setStandaloneDocCitation] = useState<SourceCitation | null>(null);
+
+  const [isConnectionFailed, setIsConnectionFailed] = useState<boolean>(false);
 
   // Check if opened with query parameters for direct standalone document view
   useEffect(() => {
@@ -48,14 +62,6 @@ export const App: React.FC = () => {
       });
     }
   }, []);
-
-  const handleToggleTheme = () => {
-    setIsDark((prev) => {
-      const next = !prev;
-      localStorage.setItem('rulelens-theme', next ? 'dark' : 'light');
-      return next;
-    });
-  };
 
   // Periodically check system health with a 90-second connecting grace period
   useEffect(() => {

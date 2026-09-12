@@ -20,12 +20,17 @@ class Document(Base, TimestampMixin):
     """Represents an academic regulation source document."""
     __tablename__ = "documents"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[str] = mapped_column(String(128), primary_key=True, default=lambda: str(uuid.uuid4()))
     name: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
     file_type: Mapped[str] = mapped_column(String(32), nullable=False)  # pdf, markdown, table
     title: Mapped[str] = mapped_column(String(512), nullable=False)
     description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     version: Mapped[str] = mapped_column(String(64), default="2026", nullable=False)
+
+    # Upload tracking
+    file_path: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True)  # path on disk
+    file_size_bytes: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    upload_status: Mapped[str] = mapped_column(String(32), default="pending", nullable=False)  # pending, indexed, failed
 
     pages: Mapped[List["Page"]] = relationship("Page", back_populates="document", cascade="all, delete-orphan")
 
@@ -34,8 +39,8 @@ class Page(Base, TimestampMixin):
     """Represents a discrete page or logical unit within a document."""
     __tablename__ = "pages"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    document_id: Mapped[str] = mapped_column(String(36), ForeignKey("documents.id", ondelete="CASCADE"), index=True, nullable=False)
+    id: Mapped[str] = mapped_column(String(128), primary_key=True, default=lambda: str(uuid.uuid4()))
+    document_id: Mapped[str] = mapped_column(String(128), ForeignKey("documents.id", ondelete="CASCADE"), index=True, nullable=False)
     page_number: Mapped[int] = mapped_column(Integer, nullable=False)
     raw_text: Mapped[str] = mapped_column(Text, nullable=False)
     page_image_path: Mapped[Optional[str]] = mapped_column(String(512), nullable=True)
@@ -48,8 +53,8 @@ class Chunk(Base, TimestampMixin):
     """Represents an evidence chunk with provenance and vector embedding."""
     __tablename__ = "chunks"
 
-    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
-    page_id: Mapped[str] = mapped_column(String(36), ForeignKey("pages.id", ondelete="CASCADE"), index=True, nullable=False)
+    id: Mapped[str] = mapped_column(String(128), primary_key=True, default=lambda: str(uuid.uuid4()))
+    page_id: Mapped[str] = mapped_column(String(128), ForeignKey("pages.id", ondelete="CASCADE"), index=True, nullable=False)
     section: Mapped[Optional[str]] = mapped_column(String(255), nullable=True, index=True)
     text: Mapped[str] = mapped_column(Text, nullable=False)
     embedding: Mapped[Optional[Any]] = mapped_column(Vector(384), nullable=True)

@@ -1,6 +1,7 @@
+import io
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Union
 from pypdf import PdfReader
 
 
@@ -21,9 +22,9 @@ class ParsedDocument:
     pages: List[ParsedPage] = field(default_factory=list)
 
 
-def parse_pdf(pdf_path: Path, doc_id: str, title: str, description: str) -> ParsedDocument:
-    """Parses a paginated PDF document, preserving page-level provenance."""
-    reader = PdfReader(str(pdf_path))
+def parse_pdf_bytes(file_bytes: bytes, filename: str, doc_id: str, title: str, description: str) -> ParsedDocument:
+    """Parses a paginated PDF document directly from memory bytes."""
+    reader = PdfReader(io.BytesIO(file_bytes))
     pages: List[ParsedPage] = []
 
     for idx, page in enumerate(reader.pages):
@@ -33,7 +34,7 @@ def parse_pdf(pdf_path: Path, doc_id: str, title: str, description: str) -> Pars
 
     return ParsedDocument(
         id=doc_id,
-        name=pdf_path.name,
+        name=filename,
         file_type="pdf",
         title=title,
         description=description,
@@ -41,14 +42,11 @@ def parse_pdf(pdf_path: Path, doc_id: str, title: str, description: str) -> Pars
     )
 
 
-def parse_markdown(md_path: Path, doc_id: str, title: str, description: str) -> ParsedDocument:
-    """Parses a markdown document into logical chapters/pages."""
-    content = md_path.read_text(encoding="utf-8")
-    # Break into logical chapters by '## Chapter' or '## '
+def parse_markdown_text(content: str, filename: str, doc_id: str, title: str, description: str) -> ParsedDocument:
+    """Parses a markdown document directly from text into logical sections/pages."""
     chapters = content.split("## ")
     pages: List[ParsedPage] = []
 
-    # First section before first ## (Title/Preamble)
     if chapters and chapters[0].strip():
         pages.append(ParsedPage(page_number=1, raw_text=chapters[0].strip(), section_name="Preamble"))
 
@@ -59,9 +57,21 @@ def parse_markdown(md_path: Path, doc_id: str, title: str, description: str) -> 
 
     return ParsedDocument(
         id=doc_id,
-        name=md_path.name,
+        name=filename,
         file_type="markdown",
         title=title,
         description=description,
         pages=pages,
     )
+
+
+def parse_pdf(pdf_path: Union[Path, str], doc_id: str, title: str, description: str) -> ParsedDocument:
+    """Parses a PDF from file path."""
+    path = Path(pdf_path)
+    return parse_pdf_bytes(path.read_bytes(), path.name, doc_id, title, description)
+
+
+def parse_markdown(md_path: Union[Path, str], doc_id: str, title: str, description: str) -> ParsedDocument:
+    """Parses a Markdown file from file path."""
+    path = Path(md_path)
+    return parse_markdown_text(path.read_text(encoding="utf-8"), path.name, doc_id, title, description)
