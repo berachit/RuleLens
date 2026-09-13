@@ -23,7 +23,14 @@ class Settings(BaseSettings):
     DEBUG: bool = False
     PORT: int = 8000
     HOST: str = "0.0.0.0"
-    CORS_ORIGINS: Union[List[str], str] = ["*"]
+    CORS_ORIGINS: List[str] = Field(
+        default=[
+            "https://rule-lens.vercel.app",
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+        ],
+        description="Allowed CORS origins for production and local development",
+    )
 
     # Database — loaded strictly from environment variable DATABASE_URL
     DATABASE_URL: str = Field(default="", description="PostgreSQL connection string loaded from environment")
@@ -57,16 +64,38 @@ class Settings(BaseSettings):
 
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod
-    def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:
-        if isinstance(v, str) and not v.startswith("["):
-            return [i.strip() for i in v.split(",") if i.strip()]
-        elif isinstance(v, str) and v.startswith("["):
-            import json
-            try:
-                return json.loads(v)
-            except Exception:
-                return ["*"]
-        return v
+    def assemble_cors_origins(cls, v: Union[str, List[str], None]) -> List[str]:
+        base_origins = [
+            "https://rule-lens.vercel.app",
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+        ]
+        if not v:
+            return base_origins
+
+        parsed: List[str] = []
+        if isinstance(v, str):
+            v_s = v.strip()
+            if v_s.startswith("[") and v_s.endswith("]"):
+                import json
+                try:
+                    loaded = json.loads(v_s)
+                    if isinstance(loaded, list):
+                        parsed = [str(x).strip().rstrip("/") for x in loaded if str(x).strip()]
+                except Exception:
+                    pass
+            if not parsed and v_s and v_s not in ("[]", '""', "''"):
+                parsed = [x.strip().rstrip("/") for x in v_s.split(",") if x.strip()]
+        elif isinstance(v, list):
+            parsed = [str(x).strip().rstrip("/") for x in v if str(x).strip()]
+
+        seen = set()
+        result: List[str] = []
+        for origin in base_origins + parsed:
+            if origin and origin != "*" and origin not in seen:
+                seen.add(origin)
+                result.append(origin)
+        return result
 
 
 settings = Settings()
