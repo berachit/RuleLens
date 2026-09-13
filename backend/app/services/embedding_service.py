@@ -19,15 +19,15 @@ class EmbeddingService:
     @property
     def model(self) -> TextEmbedding:
         if self._model is None:
-            logger.info(f"Loading embedding model: {self.model_name}...")
-            self._model = TextEmbedding(model_name=self.model_name)
+            logger.info(f"Loading embedding model: {self.model_name} with threads=1...")
+            self._model = TextEmbedding(model_name=self.model_name, threads=1)
         return self._model
 
     def embed_texts(self, texts: List[str]) -> List[List[float]]:
         """Generates normalized vector embeddings for a list of text strings."""
         if not texts:
             return []
-        embeddings = list(self.model.embed(texts))
+        embeddings = list(self.model.embed(texts, batch_size=16, parallel=1))
         # Convert numpy arrays to standard python floats list
         return [emb.tolist() for emb in embeddings]
 
