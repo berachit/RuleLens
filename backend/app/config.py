@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     DEBUG: bool = False
     PORT: int = 8000
     HOST: str = "0.0.0.0"
-    CORS_ORIGINS: List[str] = Field(
+    CORS_ORIGINS: Union[List[str], str] = Field(
         default=[
             "https://rule-lens.vercel.app",
             "http://localhost:5173",
@@ -76,23 +76,29 @@ class Settings(BaseSettings):
         parsed: List[str] = []
         if isinstance(v, str):
             v_s = v.strip()
-            if v_s.startswith("[") and v_s.endswith("]"):
+            if (v_s.startswith("[") and v_s.endswith("]")) or (v_s.startswith("{") and v_s.endswith("}")):
                 import json
                 try:
                     loaded = json.loads(v_s)
                     if isinstance(loaded, list):
-                        parsed = [str(x).strip().rstrip("/") for x in loaded if str(x).strip()]
+                        parsed = [str(x) for x in loaded]
                 except Exception:
-                    pass
+                    v_s = v_s.strip("[]").strip()
             if not parsed and v_s and v_s not in ("[]", '""', "''"):
-                parsed = [x.strip().rstrip("/") for x in v_s.split(",") if x.strip()]
+                parsed = [x for x in v_s.split(",")]
         elif isinstance(v, list):
-            parsed = [str(x).strip().rstrip("/") for x in v if str(x).strip()]
+            parsed = [str(x) for x in v]
+
+        cleaned: List[str] = []
+        for item in parsed:
+            s = item.strip().strip("\"'").rstrip("/")
+            if s and s != "*":
+                cleaned.append(s)
 
         seen = set()
         result: List[str] = []
-        for origin in base_origins + parsed:
-            if origin and origin != "*" and origin not in seen:
+        for origin in base_origins + cleaned:
+            if origin and origin not in seen:
                 seen.add(origin)
                 result.append(origin)
         return result
