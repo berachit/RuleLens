@@ -1,3 +1,13 @@
+import os
+
+# Constrain OpenMP, BLAS and ONNX runtime to 1 thread to avoid host-level multi-core RAM spikes on Render
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+os.environ["ORT_DISABLE_TELEMETRY"] = "1"
+
 from contextlib import asynccontextmanager
 import logging
 from fastapi import FastAPI
